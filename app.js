@@ -23,7 +23,7 @@ const send = document.getElementById("send");
    } else if (message.value === "") {
      alert("Please fill out message field before sending");
    } else {
-     alert(`Message successfully sent ${user.value}`);
+     alert(`Your message has been  successfully sent to ${user.value}.`);
    }
  });
 
@@ -35,13 +35,15 @@ const send = document.getElementById("send");
   datasets: [{
   data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
   2500],
-  backgroundColor: 'rgba(156,150,212,.5)',
-  backgroundColor: 'rgba(116,100,191,255)',
+  backgroundColor: 'rgba(112, 104, 201, .5)',
   borderWidth: 1,
   tension: 0.5,
   }]
   };
 
+  
+
+  
 
   let trafficOptions = {
     backgroundColor: 'rgba(112, 104, 201, .5)',

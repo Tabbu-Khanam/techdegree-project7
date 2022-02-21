@@ -92,7 +92,7 @@ h3 {
 .icon {
     width: 40px;
     height: 40px;
-    color: white;
+    
 }
 header {
     background-color: rgb(151, 151, 241);
@@ -107,8 +107,8 @@ nav {
     justify-content: space-around;
 }
 .icon-pic {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
 }
 .main-header {
     display: grid;
@@ -139,10 +139,7 @@ nav {
 }
 
 
-.widget-container-full, .widget-container-half {
-    width: 85vw;
-    
-}
+
 .traffic-nav {
     list-style-type: none;
     display: flex;
@@ -159,19 +156,21 @@ nav {
  border-radius: 20px;
 }
 .traffic, .daily, .mobile {
-    border-bottom: 1px solid rgb(189, 189, 189);
+   
     display: grid;
-    align-content: center;
-    justify-content: center;
+    border-bottom: 1px solid rgb(189, 189, 189);
 }
-
+.widget-container-full, .widget-container-half {
+    width: 80%;
+    margin: 20px auto;
+}
     
 .social-container {
     display: flex;
     
     background-color:rgba(236, 232, 232, 0.712);
     
-    
+    border: 2px solid rgb(189, 189, 189);
     margin: 10px;
     padding: 5px 20px;
    
@@ -187,10 +186,10 @@ nav {
     padding-top: 20px;
 }
 .social-icon {
-    width: 70px;
+    width: 80px;
     height: 70px;
     fill: white;
-    background-color:rgb(136, 136, 240);
+    background-color:rgb(113, 113, 241);
     border-radius: 50%;
     padding: 10px;
    
@@ -199,6 +198,7 @@ nav {
     line-height: 0.1;
     padding-left: 20px;
 }
+
 .social-text p:nth-child(1) {
    color: rgb(136, 136, 240);
    font-size: 20px;
@@ -211,14 +211,20 @@ nav {
      display: flex;
      flex-direction: column;
      align-items: center;
-     line-height: 1.0;
+    
      border-bottom: 1px solid rgb(231, 225, 225);
      padding: 10px 0px;
+ }
+ .members-container > p {
+     margin-top: -10px;
  }
  .members-text{
   text-align: center;
  }
- 
+ #para {
+     line-height: 0.4;
+     margin-bottom: 20px;
+ }
  
  
  .profile-img {
@@ -306,6 +312,7 @@ nav {
 #send {
   cursor: pointer;
 }
+
 @media screen and (min-width: 768px) {
   .grid-container {
       grid-template-columns: 100px 1fr;
@@ -318,31 +325,33 @@ nav {
   }
   .widget-container-half {
       width: 40vw;
+      margin: 0px 0px 10px 0px;
+      padding-left: 10px;
   }
   .widget-container-full {
-      width: 80vw;
+      width: 75vw;
   }
   .daily, .mobile {
       display: inline-grid;
       
   }
   .daily {
-    grid-template-rows: 120px;
+    
     border-right: 1px solid rgb(231, 225, 225);
   }
- .mobile {
-     grid-template-rows: 120px;
-    
- }
+ 
   .div-nav {
    
     display: flex;
     flex-direction: column;
+    padding: 10px 0px 0px 0px;
     
-    padding-left: 10px;
     justify-content: flex-start;
-    align-content: center;
+    text-align: center;
     height: 100%;
+  }
+.icon-pic {
+  margin-top: 25px;
 }
 .main-header {
     display: grid;
@@ -362,6 +371,20 @@ nav {
 .social-text {
     padding-left: 10px;
 }
+.traffic-header {
+    display: flex;
+   
+   }
+   .traffic-header > h3 {
+       margin-right: auto;
+   }
+   .traffic-nav {
+       justify-content: flex-end;
+       
+   }
+   .traffic-nav-link {
+       padding: 20px;
+   }
 .members-container > .members-text{
  margin-right: auto;
 
@@ -442,7 +465,13 @@ input, textarea, .primary-button {
     
 }
 
+h3 {
+    padding-left: 20px;
+}
 
+.widget-container-full {
+    width: 85vw;
+}
 .main-header{
     grid-area: main-header;
 }
@@ -458,6 +487,7 @@ input, textarea, .primary-button {
 }
 .mobile {
     grid-area: mobile;
+    justify-content: flex-start;
 }
 .wrap {
     grid-area: wrap;
@@ -482,7 +512,7 @@ input, textarea, .primary-button {
     }
     
     .social-icon {
-        width: 75px;
+        width: 80px;
         height: 75px;
         padding: 15px;
        
@@ -517,6 +547,7 @@ input, textarea, .primary-button {
    border-bottom: none;
     }
    .members-text {
-       margin: -10px;
+       margin: -12px;
    }  
+   
 }
