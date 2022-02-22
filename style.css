@@ -324,7 +324,7 @@ nav {
 
   }
   .widget-container-half {
-      width: 40vw;
+      width: calc(44vw - 20px);
       margin: 0px 0px 10px 0px;
       padding-left: 10px;
   }
