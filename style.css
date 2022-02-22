@@ -158,11 +158,17 @@ nav {
 .traffic, .daily, .mobile {
    
     display: grid;
+   
+}
+.traffic {
     border-bottom: 1px solid rgb(189, 189, 189);
 }
 .widget-container-full, .widget-container-half {
     width: 80%;
     margin: 20px auto;
+}
+.wrap { 
+    border-top: 1px solid rgb(189, 189, 189);
 }
     
 .social-container {
@@ -324,9 +330,13 @@ nav {
 
   }
   .widget-container-half {
-      width: calc(44vw - 20px);
+      width: calc(43vw - 40px);
       margin: 0px 0px 10px 0px;
-      padding-left: 10px;
+      
+  }
+  .view {
+    width: calc(45vw - 57px);
+    padding-bottom: 13px;
   }
   .widget-container-full {
       width: 75vw;
@@ -335,9 +345,21 @@ nav {
       display: inline-grid;
       
   }
+  .daily > h3, .mobile > h3 {
+      padding: 0px;
+     
+  }
+  .daily > h3 {
+    margin-top: -5px;
+  }
   .daily {
-    
+    padding: 20px 14px;
     border-right: 1px solid rgb(231, 225, 225);
+
+  }
+  .mobile {
+    padding-left: 20px;
+    
   }
  
   .div-nav {
@@ -471,6 +493,11 @@ h3 {
 
 .widget-container-full {
     width: 85vw;
+}
+.widget-container-half {
+    width: calc(40vw - 53px);
+   
+    
 }
 .main-header{
     grid-area: main-header;
